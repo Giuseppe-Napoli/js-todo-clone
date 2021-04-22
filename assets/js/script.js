@@ -22,16 +22,9 @@ $(document).ready(function(){
     $('.container ul').append(clonList)
     //console.log(clonList);
 
-    $('.template li').each(function(index,element ){
-      if( index % 2 ===0){
-        $(element).addClass('yellow');
-      }else{
-        $(element).addClass('red');
-      }
-    })
     
   }
-  
+
   // al click del cestino eliminare il parent
   $(document).on('click', '.fa-trash-alt', function(){
     $(this).parent('li').remove()
@@ -91,3 +84,15 @@ $(document).ready(function(){
   }) */
 
 });
+
+// prova
+/* function colorRiga (){
+  $('.container .lista-eventi li').each(function(index,element ){
+    console.log('ciao');
+    if( index % 2 ===0){
+      $(element).addClass('yellow');
+    }else{
+      $(element).addClass('red');
+    }
+  })
+} */
